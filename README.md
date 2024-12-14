@@ -52,4 +52,5 @@
    ```
 
 ## Link to the Deployed App
-[Dynamic Event Calendar - Deployed Version](dynamic-event-calendar-six.vercel.app) 
+[Dynamic Event Calendar - Deployed Version](https://dynamic-event-calendar-six.vercel.app)
+
