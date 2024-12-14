@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { getDaysInMonth } from "./utils/dateUtils";
-import "./app.css";
+import "./App.css";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 const App = () => {
