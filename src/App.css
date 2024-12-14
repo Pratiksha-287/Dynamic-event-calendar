@@ -1,0 +1,161 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.calendar-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.calendar-controls button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.calendar-controls button:hover {
+  background-color: #0056b3;
+}
+
+.calendar-controls span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.day-header {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.calendar-day {
+  border: 1px solid #ddd;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.calendar-day:hover {
+  background-color: #e0e0e0;
+}
+.calendar-day.current-day{
+  background-color: #bce7fb;
+}
+
+
+
+.calendar-day.selected {
+  border: 2px solid #007bff;
+  background-color: #e6f7ff;
+}
+
+.event {
+  background-color: #007bff;
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+  margin-top: 5px 0;
+  border-radius: 5px;
+}
+
+.event.work {
+  background-color: #007bff;
+}
+
+.event.personal {
+  background-color: #28a745;
+}
+
+.event.other {
+  background-color: #ffc107;
+}
+
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  z-index: 1000;
+}
+
+.modal input,
+.modal select,
+.modal textarea {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.modal button{
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+.modal .delete-btn {
+  background-color: #dc3545;
+  margin-top: 10px;
+}
+
+.modal .delete-btn:hover {
+  background-color: #c82333;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ddd;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-close:hover {
+  background-color: #bbb;
+}
+
+.event-preview:hover{
+  cursor: pointer;
+  background-color: #bbb;
+  padding: 30px;
+}
