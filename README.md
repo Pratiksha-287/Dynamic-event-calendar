@@ -1,13 +1,26 @@
 # Dynamic Event Calendar
 
 ## Features
-- **Dynamic Calendar**: Displays a fully interactive calendar with accurate dates based on Indian Standard Time (IST).
-- **Event Management**:
-  - Add, edit, and delete events for any day.
-  - Drag and drop events between days.
-  - Prevents overlapping event times.
-- **Local Storage Integration**: Events persist across page refreshes using local storage.
-- **Responsive Design**: Optimized for various screen sizes.
+
+### 1. **Monthly View Calendar**
+   - Displays the current month with highlighted current day.
+   - Navigate between months using **Previous** and **Next** buttons.
+
+### 2. **Event Management**
+   - Add, edit, and delete events with details like:
+     - **Name**, **Time**, **Description**, and **Type** (Work/Personal/Other).
+   - Prevents overlapping events with real-time conflict detection.
+
+### 3. **Drag-and-Drop Events**
+   - Move events between days effortlessly.
+   - Automatically saves updates to ensure data consistency.
+
+### 4. **Export Options**
+   - Export events as **JSON** for sharing or **CSV** for spreadsheet use.
+
+### 5. **Persistent and Responsive**
+   - Events are saved locally, retaining data across sessions.
+   - Fully responsive design for desktop and mobile.
 
 ## Instructions to Run the App Locally
 
